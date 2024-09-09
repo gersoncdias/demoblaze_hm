@@ -1,5 +1,6 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
+describe('Validar Home Page', () => {
+  it('Deve acessar a pagina princípal', () => {
+    cy.visit('/')
+    cy.validar_banner()
   })
 })
