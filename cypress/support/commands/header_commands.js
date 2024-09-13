@@ -6,9 +6,9 @@ Cypress.Commands.add("validar_logo", () => {
     .should("be.visible")
     .should("have.attr", "href", "index.html");
 });
-Cypress.Commands.add("validar_links", () => {
+Cypress.Commands.add("validar_links", (txt, link) => {
   cy.get(HEADER_PAGE.DIV_HEADER)
     .should("be.visible")
-    .contains("Home")
-    .should("have.attr", "href", "index.html");
+    .contains(txt)
+    .should("have.attr", "href", link);
 });
