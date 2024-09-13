@@ -4,5 +4,6 @@ describe('Validar Home Page', () => {
     cy.validar_banner()
     cy.validar_logo()
     cy.validar_links()
+    cy.validar_telefone()
   })
 })
