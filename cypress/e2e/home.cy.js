@@ -13,7 +13,7 @@ describe("Validar Home Page", () => {
       validation_dataheader.links.index
     );
   });
-  it.only("Deve validar o Footer", () => {
+  it("Deve validar o Footer", () => {
     cy.validar_div();
     cy.validateAboutUsSection(validation_data_footer.title, validation_data_footer.text)
   });

@@ -5,8 +5,8 @@ Cypress.Commands.add("validar_div", () => {
 });
 
 Cypress.Commands.add('validateAboutUsSection', (txt1, txt) => {
-  cy.get('#footc #fotcont .col-sm-4 .thumbnail .caption h4.grrrr')
+  cy.get(FOOTER_PAGE.BODY.SECTIONS.TITLE)
     .contains(txt1);
-  cy.get('#footc #fotcont .col-sm-4 .thumbnail .caption p')
+  cy.get(FOOTER_PAGE.BODY.SECTIONS.BODY)
     .contains(txt);
 });
