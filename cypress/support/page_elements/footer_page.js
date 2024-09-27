@@ -4,6 +4,14 @@ export const FOOTER_PAGE = {
         SECTIONS:{
             TITLE: '#footc #fotcont .col-sm-4 .thumbnail .caption h4.grrrr',
             BODY: '#footc #fotcont .col-sm-4 .thumbnail .caption p'
-        } 
+        },
+        SECTIONS_3:{
+            TITLE: '#footc #fotcont .col-sm-3 .thumbnail .caption h4.grrrr',
+            BODY: '#footc #fotcont .col-sm-3 .thumbnail .caption p'
+        },
+        SECTIONS_4:{
+            TITLE: '#footc #fotcont .col-sm-4:nth-of-type(3) .thumbnail .caption h4',
+           
+        }  
     }
 }
