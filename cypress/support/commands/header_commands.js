@@ -12,3 +12,13 @@ Cypress.Commands.add("validar_links", (txt, link) => {
     .contains(txt)
     .should("have.attr", "href", link);
 });
+
+Cypress.Commands.add('validateProductStore', (txt) => {
+  cy.get( HEADER_PAGE.DIV_LOGO)
+    .contains(txt) ;
+    cy.get('img[src="bm.png"]')
+    .should('exist');
+});
+
+
+
