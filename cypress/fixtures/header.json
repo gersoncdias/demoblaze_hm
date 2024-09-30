@@ -1,9 +1,22 @@
 {
-  "menu": {
-    "home": "Home"
+
+  "logo": {
+    "text": "PRODUCT STORE"},
+
+   "menu": {
+    "home": "Home",
+    "contact": "Contact",
+    "about": "About us",
+    "cart": "Cart",
+    "login": "Log in",
+    "sigin": "Sign up"
   },
+
   "links":{
-    "index":"index.html"
+    "index":"index.html",
+    "cart": "cart.html",
+    "deful": "#"
   }
+
   
 }
