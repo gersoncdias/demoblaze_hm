@@ -31,3 +31,8 @@ Cypress.Commands.add('validateProductStoreSection', (text) => {
     .contains(text);
 
 });
+Cypress.Commands.add('validatecopyright', (text) => {
+  cy.get(FOOTER_PAGE.BODY.SECTIONS_5.TITLE) 
+    .should("be.visible")
+    .contains(text);
+  });
