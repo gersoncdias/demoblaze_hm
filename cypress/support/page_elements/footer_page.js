@@ -11,7 +11,10 @@ export const FOOTER_PAGE = {
         },
         SECTIONS_4:{
             TITLE: '#footc #fotcont .col-sm-4:nth-of-type(3) .thumbnail .caption h4',
-           
-        }  
+
+       },  
+        SECTIONS_5:{
+            TITLE: '.py-5',
+       },
     }
 }
