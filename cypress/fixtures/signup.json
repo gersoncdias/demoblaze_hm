@@ -1,0 +1,9 @@
+{
+"modal":{
+"titulo": "Sign up",
+"user": "Username:",
+"senha": "Password:",
+"botão": "Sign up",
+"sair": "Close"
+}
+}
