@@ -32,7 +32,6 @@ describe("Validar Home Page", () => {
       validation_data_header.menu.login, validation_data_header.links.deful)
     cy.validar_links(
       validation_data_header.menu.sigin, validation_data_header.links.deful)
-
           
   });
   
