@@ -44,6 +44,7 @@ Cypress.Commands.add("acessar_modal_signup", (txt, link) => {
     Cypress.Commands.add("clicar_no_botão_cancelar", (txt) => {
       cy.get(SINGUP_PAGE.MODAL.close)
         .should("be.visible")
-        .should("have.text", txt).invoke('enter')
-        .should("not.be.visible", {timeout: 1000});
+        .should("have.text", txt).invoke('click');
+      cy.get(SINGUP_PAGE.MODAL.close)
+        .should("not.be.visible");
     });
