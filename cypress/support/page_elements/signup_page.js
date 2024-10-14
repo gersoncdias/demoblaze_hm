@@ -6,8 +6,8 @@ export const SINGUP_PAGE = {
         User: '.form-control-label',
         password: '.form-control-label',
         botão: '.btn-primary',
-        close: '#signInModal > .modal-dialog > .modal-content > .modal-footer > .btn-secondary'
-        
+        close: '#signInModal > .modal-dialog > .modal-content > .modal-footer > .btn-secondary',
+        btn_header_close: '.close > span'
     }
 
 }
