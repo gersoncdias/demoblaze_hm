@@ -38,19 +38,35 @@ it("valida nome do modal senha", () => {
 it("Deve clicar no botão enviar", () => {
   cy.acessar_modal_signup(
     validation_data_header.menu.sigin, validation_data_header.links.deful)
-  cy.validar_inputs()
+  cy.validar_inputs_valido()
   cy.clicar_no_botão_enviar(
     validation_data_signup.modal.botão)
+  cy.validarAlert('This user already exist.')
 
 });
 
-it.only("Deve clicar no botão cancelar", () => {
+it("Deve clicar no botão enviar", () => {
+  cy.acessar_modal_signup(
+    validation_data_header.menu.sigin, validation_data_header.links.deful)
+  cy.validar_inputs_invalido()
+  cy.clicar_no_botão_enviar(
+    validation_data_signup.modal.botão)
+  cy.validarAlert('Please fill out Username and Password.')
+});
+
+it("Deve clicar no botão cancelar", () => {
   cy.acessar_modal_signup(
     validation_data_header.menu.sigin, validation_data_header.links.deful)
   //cy.validar_inputs()
   cy.clicar_no_botão_cancelar(
     validation_data_signup.modal.sair)
+});
 
+it.only("Deve clicar no botão X", () => {
+  cy.acessar_modal_signup(
+    validation_data_header.menu.sigin, validation_data_header.links.deful)
+  //cy.validar_inputs()
+  cy.clicar_no_botao_X()
 });
 });
 
