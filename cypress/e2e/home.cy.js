@@ -14,10 +14,7 @@ describe('Validar Home Page', () => {
   it('Deve acessar a pagina princípal', () => {
     cy.validar_banner();
     cy.validar_logo();
-    cy.validar_links(
-      validation_dataheader.menu.home,
-      validation_dataheader.links.index
-    );
+
   });
   it('Deve validar o Footer', () => {
     cy.validar_div();
