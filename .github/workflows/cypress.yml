@@ -1,0 +1,22 @@
+name: Cypress Tests
+
+on:
+  repository_dispatch:
+    types:
+      - run-tests
+
+jobs:
+  cypress-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v2
+
+      - name: Instalar Dependências
+        run: |
+          npm install
+
+      - name: Executar Cypress (Home Test)
+        run: |
+          npm run test
