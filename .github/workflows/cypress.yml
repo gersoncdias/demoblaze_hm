@@ -1,6 +1,15 @@
 name: Cypress Tests
 
 on:
+  push:
+    branches:
+      - main
+      - qa
+      - 'feature/**'  # Qualquer branch que comece com 'feature/'
+  pull_request:
+    branches:
+      - main
+      - qa
   repository_dispatch:
     types:
       - run-tests
