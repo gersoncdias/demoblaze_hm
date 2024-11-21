@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl:'http://wsapacs.ddns.net:8000/',
+    baseUrl:'https://demoblaze.com/',
     setupNodeEvents(on, config) {},
     env: {
       hideXhr: true
