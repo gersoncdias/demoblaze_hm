@@ -19,21 +19,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Fazer checkout do código
       - name: Checkout do código
         uses: actions/checkout@v2
 
-      # Instalar dependências do Cypress
       - name: Instalar Dependências
         run: |
           npm install
 
-      # Executar os testes automatizados
       - name: Executar Cypress (Home Test)
         run: |
           npm run test
 
-      # Disparar Pipeline de Merge no Projeto do Site
       - name: Disparar Pipeline de Merge
         if: success()  # Executa apenas se os testes passaram
         run: |
